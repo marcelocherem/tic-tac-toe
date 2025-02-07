@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #262A35;
+}
+
+.player1,
+.central,
+.player2 {
+    flex: 1;
+    height: 100%;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player1,
+.player2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.player1>*,
+.player2>* {
+    margin: 0;
+}
+
+.player1 h2,
+.player2 h2 {
+    color: #FF2F63;
+}
+
+.point {
+    margin-top: 10px;
+    color: #08D9D6;
+}
+
+#table {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    background-color: black;
+    width: 490px;
+    height: 490px;
+    justify-content: center;
+    align-content: center;
+}
+
+.turn {
+    color: #fff;
+    margin: 0;
+
+}
+
+.central .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    background-color: transparent;
+    background-color: black;
+    margin: 20px 0;
+    border: 4px solid black;
+}
+
+.central .options>* {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #262A35;
+    color: white;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    font-weight: 900;
+    font-size: 5rem;
+    cursor: pointer;
+    color: white;
+    background-color: #262A35;
+    transition: 0.2s;
+}
+
+.square:hover {
+    background-color: #08D9D6;
+    color: black;
+}
+
+#restart {
+    margin-top: 20px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 2rem;
+    background-color: #FF2F63;
+    cursor: pointer;
+    border: none;
+}
+
+.central .options .active {
+    background-color: #FF2F63;
+}
